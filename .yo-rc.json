@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["blog", "gateway", "store"],
+    "clusteredDbApps": ["store"],
+    "directoryPath": "../",
+    "dockerPushCommand": "docker push",
+    "dockerRepositoryName": "indiepopart",
+    "ingressDomain": "",
+    "istio": false,
+    "jwtSecretKey": "NTliOWM3Yjg0MTg3MTcyODgxZTdlOTc4YTVkYWEwOTdmNmE3ZWRlNmMyOTJlZTQxMDEzNzAxYzU5MjZkNTNhZGYxODNiMjdkNjE3YTQ2NTFjOWNiNjYyYTRjYzE3ZDIyMzkzMw==",
+    "kubernetesNamespace": "demo",
+    "kubernetesServiceType": "LoadBalancer",
+    "kubernetesStorageClassName": "",
+    "kubernetesUseDynamicStorage": true,
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka"
+  }
+}

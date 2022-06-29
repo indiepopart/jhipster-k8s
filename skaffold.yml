@@ -1,0 +1,18 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: indiepopart/blog
+      context: ../blog
+      jib: {}
+    - image: indiepopart/gateway
+      context: ../gateway
+      jib: {}
+    - image: indiepopart/store
+      context: ../store
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+deploy:
+  kustomize: {}
